@@ -4,39 +4,119 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>About</title>
 <link rel="stylesheet" href="./style.css">
+
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+  <!-- Enable responsive view on mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Responsive Tiled Photo Gallery in Pure CSS</title>
+
+  <!-- Enable media queries for old IE -->
+  <!--[if lt IE 9]>
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+  <![endif]-->
+
 </head>
-<body>
-<center>
-<h1>Tyler Hartrich's Product Design Portfolio.</h1>
-<img src="https://ga-core.s3.amazonaws.com/production/uploads/instructor/image/11258/thumb_Tyler_Hartrich.jpg" alt="Tyler's Headshot" alt="Smiley face" height="300" width="300">
-</center>
-<center>
-<h3>This is a paragraph that is a big deal for many reasons.</h3>
-<br><hr><br>
-</center>
-<div class="city">
-  <h2>London</h2>
-  <p>London is the capital city of England.</p>
-  <p>It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-</div>
 
-<div class="city">
-  <h2>Paris</h2>
-  <p>Paris is the capital of France.</p>
-  <p>The Paris area is one of the largest population centers in Europe, with more than 12 million inhabitants.</p>
-</div>
+<body class="no-touch">
 
-<div class="city">
-  <h2>Tokyo</h2>
-  <p>Tokyo is the capital of Japan.</p>
-  <p>It is the center of the Greater Tokyo Area,  and the most populous metropolitan area in the world.</p>
-</div>
+  <div class="wrap">
 
-<div class="city">
-  <h2>New York</h2>
-  <p>The City of New York is the most populous city in the United States.</p>
-  <p>New York is an important center for international diplomacy and has been described as the cultural and financial capital of the world.</p>
-</div>
+    <!-- Define all of the tiles: -->
+    <div class="box">
+      <div class="boxInner">
+        <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/7.jpg" />
+        <div class="titleBox">Butterfly</div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="boxInner">
+        <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/1.jpg" />
+        <div class="titleBox">An old greenhouse</div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="boxInner">
+        <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/2.jpg" />
+        <div class="titleBox">Purple wildflowers</div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="boxInner">
+        <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/3.jpg" />
+        <div class="titleBox">A birdfeeder</div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="boxInner">
+        <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/10.jpg" />
+        <div class="titleBox">Crocus close-up</div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="boxInner">
+        <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/4.jpg" />
+        <div class="titleBox">The garden shop</div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="boxInner">
+        <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/5.jpg" />
+        <div class="titleBox">Spring daffodils</div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="boxInner">
+        <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/6.jpg" />
+        <div class="titleBox">Iris along the path</div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="boxInner">
+        <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/8.jpg" />
+        <div class="titleBox">The garden blueprint</div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="boxInner">
+        <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/9.jpg" />
+        <div class="titleBox">The patio</div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="boxInner">
+        <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/11.jpg" />
+        <div class="titleBox">Bumble bee collecting nectar</div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="boxInner">
+        <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/12.jpg" />
+        <div class="titleBox">Winding garden path</div>
+      </div>
+    </div>
+
+  </div>
+  <!-- /#wrap -->
+
+  <!-- Add some JavaScript to enable toggling the descriptions when an image is tapped on a touchscreen device -->
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.js"></script>
+  <script type="text/javascript">
+    $(function(){
+      // See if this is a touch device
+      if ('ontouchstart' in window)
+      {
+        // Set the correct body class
+        $('body').removeClass('no-touch').addClass('touch');
+
+        // Add the touch toggle to show text
+        $('div.boxInner img').click(function(){
+          $(this).closest('.boxInner').toggleClass('touchFocus');
+        });
+      }
+    });
+  </script>
 
 </body>
 </html>
