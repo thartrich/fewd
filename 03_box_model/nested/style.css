@@ -1,0 +1,28 @@
+h1, h2 {
+    font-family: "arial";
+}
+code {
+    background-color: lightgrey;
+}
+.announcement {
+  background-color: indianred;
+  color: white;
+}
+/* Apply style to all list items in unordered lists only */
+ul li {
+  font-family: "Comic Sans MS";
+}
+
+/* Make all list items in order list bigger (24px) */
+ol li {
+  font-size: 24px;
+}
+/* Make all <code> tags inside announcements black text on white background   */
+
+.announcement code {
+color: black;
+background-color: white;
+}
+p:last-child {
+color: blue;
+}
