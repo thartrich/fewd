@@ -58,3 +58,20 @@ ol {
   padding-left: 48px;
   padding-right: 48px;
 }
+.nav-items {
+  display: block;
+  padding-left: 0;
+  text-align: center;
+  padding: 20px;
+  margin: 20px;
+}
+.nav-item {
+  display: inline;
+  margin-left: auto;
+  margin-right: auto;
+}
+h1, h2 {
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
