@@ -1,0 +1,194 @@
+body {
+  font-family: "Open Sans";
+  font-size: 24px;
+}
+
+button {
+  border: none;
+  border-radius: 6px;
+  padding: 12px 48px;
+  font-family: "Open Sans";
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+header {
+  height: 400px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background: url('../images/glucosity.png');
+  background-size: cover;
+
+  color: white;
+}
+
+header h1 {
+  font-size: 120px;
+  text-align: center;
+  margin-bottom: 0px;
+  font-weight: bold;
+}
+
+header h2 {
+  font-size: 60px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 48px;
+  font-weight: lighter;
+}
+
+header button {
+  background-color: white;
+  display: block;
+  margin: 40px auto;
+
+  color: black;
+}
+
+#value-proposition {
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  background: black;
+  color: white;
+}
+
+.graphic {
+  float: left;
+  width: 33%;
+  text-align: center;
+}
+
+.graphic img {
+  width: 160px;
+}
+
+.graphic p {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+#benefits {
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+#benefits h2 {
+  font-size: 48px;
+  color: black;
+  margin-bottom: 24px;
+}
+
+#benefits p {
+  margin-bottom: 48px
+  font-size: 36px;
+}
+
+#benefits ul {
+  list-style: disc;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#benefits li {
+  margin-bottom: 12px;
+}
+
+#benefits strong {
+  font-weight: bold;
+}
+
+.benefits-today, .benefits-future {
+  float: left;
+  width: 50%;
+}
+
+#testimonial {
+  color: white;
+  background: url('../images/activity_small_2x.jpg');
+  background-size: cover;
+
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.testimonial-quote {
+  width: 800px;
+  margin: 0 auto;
+  text-align: center;
+
+  font-size: 48px;
+  font-style: italic;
+  margin-bottom: 24px;
+}
+
+.testimonial-author {
+  width: 800px;
+  margin: 0 auto;
+  text-align: center;
+
+  font-size: 48px;
+  font-weight: bold;
+}
+
+aside {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: white;
+}
+
+aside button {
+  background: black;
+  color: white;
+  display: block;
+  margin: 0 auto;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding-top: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 10px;
+}
+
+footer h2 {
+  margin-bottom: 48px;
+  text-align: center;
+  font-size: 60px;
+  font-weight: bold;
+  color: white;
+}
+
+.footer-links {
+  margin-bottom: 48px;
+  text-align: center;
+}
+
+.footer-links a {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.footer-copyright {
+  text-align: center;
+  font-size: 16px;
+}
