@@ -40,7 +40,19 @@ body {
   background: white;
 }
 
+.sign-up-question, .sign-up-input {
+  display: block;
 
-input[type="email"] {
-  font-size: 40px;
+}
+
+.sign-up-field {
+  padding-top: 20px;
+}
+input[type="text"],
+input[type="email"],
+input[type="data"],
+input[type="number"] {
+  width: 100%;
+  font-size: 18px;
+  padding: 24px;
 }
