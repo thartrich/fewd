@@ -56,3 +56,9 @@ input[type="number"] {
   font-size: 18px;
   padding: 24px;
 }
+input[type="submit"] {
+  padding:5px 15px;
+  background:#ccc;
+  height:50px;
+
+}
