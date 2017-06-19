@@ -299,33 +299,68 @@ footer p {
 /*******************************************/
 
 @media screen and (max-width: 1000px) {
-#hero, .container, #benefits, #testimonial, blockquote, .readmore {
+#hero, .container, blockquote, .readmore {
     width: 100%;
     font-size: 30px;
-    padding-right: 20px;
+    padding-right: 30px;
+    padding-left: 30px;
 
 }
 }
 
 @media screen and (max-width: 768px) {
-  #hero, .container, #testimonial, blockquote, .readmore {
+  #hero, .container, .readmore {
     width: 100%;
   font-size: 22px;
+  padding-right: 30px;
+  padding-left: 30px;
 
 }
 }
 
 @media screen and (max-width: 480px) {
-#hero, .container, #testimonial, blockquote, .readmore {
+#hero, .container, .readmore {
   width: 100%;
     font-size: 18px;
+    padding-right: 40px;
+    padding-left: 40px;
 }
 }
+
+/*******************************************/
+
+@media screen and (max-width: 1000px) {
+#testimonial, blockquote,  {
+    width: 100%;
+    font-size: 30px;
+
+
+}
+}
+
+@media screen and (max-width: 768px) {
+#testimonial, blockquote, {
+    width: 100%;
+  font-size: 22px;
+
+
+}
+}
+
+@media screen and (max-width: 480px) {
+#testimonial, blockquote, {
+  width: 100%;
+    font-size: 18px;
+
+}
+}
+
 
 @media screen and (max-width: 480px) {
 .button, {
   width: 60%;
     font-size: 18px;
+
 }
 }
 
@@ -382,29 +417,29 @@ footer p {
 /*******************************************/
 
 @media screen and (max-width: 1000px) {
- .post h2, .post p {
+#posts, .post h2, .post p {
   width: 100%;
     font-size: 26px;
     padding-left: 20px;
-    padding-right: 40px;
+    padding-right: 20px;
 }
 }
 
 @media screen and (max-width: 768px) {
- .post h2, .post p {
+#posts, .post h2, .post p {
   width: 100%;
     font-size: 22px;
     padding-left: 20px;
-    padding-right: 40px;
+    padding-right: 20px;
 }
 }
 
 @media screen and (max-width: 480px) {
- .post h2, .post p {
+#posts, .post h2, .post p {
   width: 100%;
     font-size: 18px;
-    padding-left: 20px;
-    padding-right: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 }
 
