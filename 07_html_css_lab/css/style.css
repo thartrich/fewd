@@ -20,10 +20,20 @@ header {
   padding-bottom: 1rem;
 }
 
+header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 header h2 a {
-  color: blue;
-  font-family: Arial;
+  color: yellow;
   text-decoration: none;
+}
+
+header nav {
+  float: right;
+  padding-right: 20px;
 }
 
 header nav a {
@@ -36,6 +46,19 @@ header nav a {
   text-transform: uppercase;
 }
 
+.primary-navigation, .secondary-navigation {
+  display: inline;
+  list-style: none;
+
+  padding-left: 0;
+}
+
+.primary-navigation li, .secondary-navigation li {
+  display: inline;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
 .motto {
   background-color: lightgray;
 
@@ -46,6 +69,8 @@ header nav a {
   font-style: italic;
   font-weight: bold;
   font-size: 1.5rem;
+
+  text-align: center;
 }
 
 .strikethrough {
@@ -66,14 +91,54 @@ header nav a {
 
 .sign-up-call-to-action {
   background-color: rgba(255, 255, 255, 0.75);
-  box-shadow: 0 0 25px black;
+  box-shadow: 0 0 5px black;
+  padding: 50px;
+  width: 40%;
+  float: right;
+  margin-top: 100px;
+  margin-right: 30px;
+
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.sign-up-call-to-action button {
+  width: 100%;
+  background-color: gold;
+}
+
+.hero:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .sign-up-call-to-action h1 {
   font-family: Arial;
 }
 
+.info-boxes:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.info-box {
+  width: 33%;
+  float: left;
+
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+  box-sizing: border-box;
+}
+
 footer {
   color: white;
   background-color: black;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 50px;
 }
